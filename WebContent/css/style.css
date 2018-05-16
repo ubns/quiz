@@ -1,0 +1,150 @@
+/*
+ ***************************************
+ *  共通設定
+ ***************************************
+ */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	position: relative;
+}
+
+body {
+	border: 1px solid #333;
+	color: #666;
+	font-family: sans-serif;
+	height: 480px;
+	margin: 2em auto;
+	width: 780px;
+}
+
+header {
+	position: relative;
+	background: #333;
+	border: none;
+	margin: 0;
+	margin-bottom: 5em;
+	padding: 1em;
+	width: 100%;
+	z-index: 1;
+}
+
+.site-title a {
+	text-decoration: none;
+	color: #ccc;
+}
+
+/*
+ ***************************************
+ *  トップ画面用の設定
+ ***************************************
+ */
+.user {
+	position: absolute;
+	top: 17px;
+	right: 1em;
+	font-size: 12px;
+}
+
+/*
+ ***************************************
+ *  ログイン画面、サインイン画面用の設定
+ ***************************************
+ */
+ .login,
+ .signin {
+ 	text-align: center;
+ }
+ 
+ .login h3,
+ .signin h3 {
+ 	margin: 5px 0;
+ }
+ 
+ .login .main,
+ .signin .main {
+ 	text-align: center;
+ 	background: #333;
+ 	border-radius: 5px;
+ 	color: #fff;
+ 	display: inline-block;
+ 	padding: 1em;
+ 	width: 200px;
+ 	height: 250px;
+ }
+ 
+.login span,
+.signin span {
+	color: red;
+	font-size: 12px;
+}
+
+.login input,
+.signin input {
+	background: #232323;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	margin: 5px 0;
+	padding: 10px;
+	width: 90%;
+}
+
+button {
+ 	background: #cd5656;
+ 	border: none;
+ 	color: #fff;
+ 	margin: 10px 0;
+ 	border-radius: 5px;
+ 	padding: 10px;
+ 	width: 90%;
+ }
+ 
+ /*
+ ***************************************
+ *  ダッシュボード
+ ***************************************
+ */
+ .menu {
+ 	position: absolute;
+ 	top: 0;
+ 	left: 0;
+ 	background: #434343;
+ 	height: 100%;
+ 	padding-top: 60px;
+ }
+ 
+ .menu li {
+ 	font-size: 12px;
+ 	list-style: none;
+ 	padding: 5px 10px;
+ }
+ 
+li a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.menu li:hover {
+	background: #333;
+}
+ 
+/*
+ ***************************************
+ *  0px - 768px  : Smart Phone
+ ***************************************
+ */
+@media only screen and (max-width: 768px){
+
+	body {
+	 	border: none;
+		height: 100%;
+		margin: 0;
+	 	width: 100%;
+ 	}
+}
